@@ -1,4 +1,5 @@
 Test Repository creation. 
-create dev branch
+create develop branch.
 According to tesing criteria, A bug is a Bug no matter how hard it can be managed to be staged.
-So work precisely.
+So work precisely and report the following bugs as per the requirement.
+Report should be made as a bug.
