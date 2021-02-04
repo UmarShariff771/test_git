@@ -1,9 +1,15 @@
 The Following text should add below the text which is being added later typed now.
 according to testing levels of testing include
-1.Functionality testing
+1.Functionality Testing
 2.Integration Testing
 3.System Testing
 4.End-to-End Testing
 5.Acceptance Testing
 
-As per the testing life  cycle all are interrelated.
+As per the testing life cycle
+
+Requirement analysis
+Test plan
+Test case
+Test Data
+Acceptance Criteria
