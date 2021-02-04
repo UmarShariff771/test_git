@@ -6,10 +6,15 @@ according to testing levels of testing include
 4.End-to-End Testing
 5.Acceptance Testing
 
-As per the testing life cycle
+As per the testing life cycle it should be as follows
 
 Requirement analysis
 Test plan
-Test case
 Test Data
+Test Case
+Test Scenario
 Acceptance Criteria
+Testing
+Bug report
+Status
+Meet
