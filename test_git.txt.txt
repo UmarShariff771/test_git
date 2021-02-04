@@ -1,2 +1,4 @@
-Test Repo creation 
+Test Repository creation. 
 create dev branch
+According to tesing criteria, A bug is a Bug no matter how hard it can be managed to be staged.
+So work precisely.
