@@ -2,4 +2,8 @@ The Following text should add below the text which is being added later typed no
 according to testing levels of testing include
 1.Functionality testing
 2.Integration Testing
-3.System Testing.
+3.System Testing
+4.End-to-End Testing
+5.Acceptance Testing
+
+As per the testing life  cycle all are interrelated.
