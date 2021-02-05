@@ -6,7 +6,7 @@ according to testing levels of testing include
 4.End-to-End Testing
 5.Acceptance Testing
 
-As per the testing life cycle it should be as follows
+Software Testing Life Cycle(STLC)
 
 Requirement analysis
 Test plan
