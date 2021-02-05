@@ -14,6 +14,15 @@
 	<obj name="GetStarted" attr="css" value="div:nth-child(2)>a"/>
 	<obj name="TryItNow" attr="css" value="a>div"/>	
 	</page>
+	<page name="Featuresopt">
+	<obj name="GetStarted" attr="css" value="div:nth-child(2)>a">
+	</page>
+	<page name="Doc">
+	<obj name="GetStarted" attr="css" value="div>a:nth-child(1)>section">
+	<obj name="LearnExplore" attr="css" value="div>a:nth-child(2)>section">
+	<obj name="TakeLook" attr="css" value="div>a:nth-child(3)>section">
+	<obj name="HellowWorld" attr="css" value="div>a:nth-child(4)>section">
+	</page>
 </root>
 
 
