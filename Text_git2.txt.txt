@@ -1,21 +1,19 @@
-The Following text should add below the text which is being added later typed now.
-according to testing levels of testing include
-1.Functionality Testing
-2.Integration Testing
-3.System Testing
-4.End-to-End Testing
-5.Acceptance Testing
 
-Software Testing Life Cycle(STLC)
+<root>
+	<page name="Angular Home page">
+	<obj name="Homeoptions" attr="css" value="mat-toolbar-row:nth-child(2)>button>span>mat-icon"/>
+	<obj name="AngularHome" attr="css" value="mat-toolbar-row:nth-child(2)>a"/>
+	<obj name="Featuresopt" attr="css" value="ul>li:nth-child(1)>a>span"/>
+	<obj name="Docsopt" attr="css" value="ul>li:nth-child(2)>a>span"/>
+	<obj name="Resourcesopt" attr="css" value="ul>li:nth-child(3)>a>span"/>
+	<obj name="Eventsopt" attr="css" value="ul>li:nth-child(4)>a>span"/>
+	<obj name="Blogopt" attr="css" value="ul>li:nth-child(5)>a>span"/>
+	<obj name="Searchbar" attr="css" value="aio-search-box>input"/>
+	<obj name="Twittersymb" attr="css" value="div>a:nth-child(1)>mat-icon>svg"/>
+	<obj name="GitHubsymb" attr="css" value="div>a:nth-child(2)>mat-icon>svg"/>
+	<obj name="GetStarted" attr="css" value="div:nth-child(2)>a"/>
+	<obj name="TryItNow" attr="css" value="a>div"/>	
+	</page>
+</root>
 
-Requirement analysis
-Test plan
-Test Data
-Test Case
-Test Scenario
-Acceptance Criteria
-Test case execution
-Bug report
-Status
-Meet
-write  the following text and send this to commit. Check whether it works or not
+
