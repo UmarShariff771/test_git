@@ -14,7 +14,8 @@ Test Data
 Test Case
 Test Scenario
 Acceptance Criteria
-Testing
+Test case execution
 Bug report
 Status
 Meet
+write  the following text and send this to commit. Check whether it works or not
