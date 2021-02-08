@@ -22,12 +22,24 @@
 	<obj name="LearnExplore" attr="css" value="div>a:nth-child(2)>section">
 	<obj name="TakeLook" attr="css" value="div>a:nth-child(3)>section">
 	<obj name="HellowWorld" attr="css" value="div>a:nth-child(4)>section">
+	<obj name="Introduction" attr="css" value="aio-nav-menu>aio-nav-item:nth-child(1)">
+	<obj name="Gettingstarted" attr="css" value="aio-nav-menu>aio-nav-item:nth-child(2)">
+	<obj name="Understandingangular" attr="css" value="aio-nav-menu>aio-nav-item:nth-child(3)">
+	<obj name="DeveloperGuides" attr="css" value="aio-nav-menu>aio-nav-item:nth-child(4)">
+	<obj name="BestPractices" attr="css" value="aio-nav-menu>aio-nav-item:nth-child(5)">
+	<obj name="AngularTools" attr="css" value="aio-nav-menu>aio-nav-item:nth-child(6)">
+	<obj name="Tutorials" attr="css" value="aio-nav-menu>aio-nav-item:nth-child(7)">
+	<obj name="ReleaseInfo" attr="css" value="aio-nav-menu>aio-nav-item:nth-child(8)">
+	<obj name="Reference" attr="css" value="aio-nav-menu>aio-nav-item:nth-child(9)">
 	</page>
 	<page name="Resources">
 	<obj name="Developmentopt" attr="css" value="aio-resource-list>div>div:nth-child(1)>a:nth-child(1)">
 	<obj name="Educationopt" attr="css" value="aio-resource-list>div>div:nth-child(1)>a:nth-child(2)">
 	<obj name="Communityopt" attr="css" value="aio-resource-list>div>div:nth-child(1)>a:nth-child(3)">
-	</page>	
+	</page>
+	<page name="">
+
 </root>
+
 
 
