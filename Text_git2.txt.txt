@@ -61,6 +61,10 @@
 		<obj name="Events_opt" attr="css" value="ul>li:nth-child(4)>a>span"/>
 		<obj name="Blog_opt" attr="css" value="ul>li:nth-child(5)>a>span"/>
 	</page>
+	<page name="Events'>
+	<obj name="Online" attr="css" value="tr:nth-child(2)>td:nth-child(2)"/>
+	<obj name="check" attr="css" value="tr:nth-child(5)>td:nth-child(3)"/>
+	</page>
 </root>
 
 
