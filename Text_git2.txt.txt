@@ -1,45 +1,68 @@
-
 <root>
-	<page name="Angular Home page">
-	<obj name="Homeoptions" attr="css" value="mat-toolbar-row:nth-child(2)>button>span>mat-icon"/>
-	<obj name="AngularHome" attr="css" value="mat-toolbar-row:nth-child(2)>a"/>
-	<obj name="Featuresopt" attr="css" value="ul>li:nth-child(1)>a>span"/>
-	<obj name="Docsopt" attr="css" value="ul>li:nth-child(2)>a>span"/>
-	<obj name="Resourcesopt" attr="css" value="ul>li:nth-child(3)>a>span"/>
-	<obj name="Eventsopt" attr="css" value="ul>li:nth-child(4)>a>span"/>
-	<obj name="Blogopt" attr="css" value="ul>li:nth-child(5)>a>span"/>
-	<obj name="Searchbar" attr="css" value="aio-search-box>input"/>
-	<obj name="Twittersymb" attr="css" value="div>a:nth-child(1)>mat-icon>svg"/>
-	<obj name="GitHubsymb" attr="css" value="div>a:nth-child(2)>mat-icon>svg"/>
-	<obj name="GetStarted" attr="css" value="div:nth-child(2)>a"/>
-	<obj name="TryItNow" attr="css" value="a>div"/>	
+	<page name="Angular_Home_page">
+		<obj name="Home_options" attr="css" value="mat-toolbar-row:nth-child(2)>button>span>mat-icon"/>
+		<obj name="Angular_Home" attr="css" value="mat-toolbar-row:nth-child(2)>a"/>
+		<obj name="Features_opt" attr="css" value="ul>li:nth-child(1)>a>span"/>
+		<obj name="Docs_opt" attr="css" value="ul>li:nth-child(2)>a>span"/>
+		<obj name="Resources_opt" attr="css" value="ul>li:nth-child(3)>a>span"/>
+		<obj name="Events_opt" attr="css" value="ul>li:nth-child(4)>a>span"/>
+		<obj name="Blog_opt" attr="css" value="ul>li:nth-child(5)>a>span"/>
+		<obj name="Search_bar" attr="css" value="aio-search-box>input"/>
+		<obj name="Twitter_symb" attr="css" value="div>a:nth-child(1)>mat-icon>svg"/>
+		<obj name="GitHub_symb" attr="css" value="div>a:nth-child(2)>mat-icon>svg"/>
+		<obj name="Get_Started" attr="css" value="div:nth-child(2)>a"/>
+		<obj name="Try_It_Now" attr="css" value="a>div"/>
 	</page>
-	<page name="Featuresopt">
-	<obj name="GetStarted" attr="css" value="div:nth-child(2)>a">
+	<page name="Features_opt">
+		<obj name="Get_Started" attr="css" value="div:nth-child(2)>a"/>
+		<obj name="Features_opt" attr="css" value="ul>li:nth-child(1)>a>span"/>
+		<obj name="Docs_opt" attr="css" value="ul>li:nth-child(2)>a>span"/>
+		<obj name="Resources_opt" attr="css" value="ul>li:nth-child(3)>a>span"/>
+		<obj name="Events_opt" attr="css" value="ul>li:nth-child(4)>a>span"/>
+		<obj name="Blog_opt" attr="css" value="ul>li:nth-child(5)>a>span"/>
 	</page>
 	<page name="Doc">
-	<obj name="GetStarted" attr="css" value="div>a:nth-child(1)>section">
-	<obj name="LearnExplore" attr="css" value="div>a:nth-child(2)>section">
-	<obj name="TakeLook" attr="css" value="div>a:nth-child(3)>section">
-	<obj name="HellowWorld" attr="css" value="div>a:nth-child(4)>section">
-	<obj name="Introduction" attr="css" value="aio-nav-menu>aio-nav-item:nth-child(1)">
-	<obj name="Gettingstarted" attr="css" value="aio-nav-menu>aio-nav-item:nth-child(2)">
-	<obj name="Understandingangular" attr="css" value="aio-nav-menu>aio-nav-item:nth-child(3)">
-	<obj name="DeveloperGuides" attr="css" value="aio-nav-menu>aio-nav-item:nth-child(4)">
-	<obj name="BestPractices" attr="css" value="aio-nav-menu>aio-nav-item:nth-child(5)">
-	<obj name="AngularTools" attr="css" value="aio-nav-menu>aio-nav-item:nth-child(6)">
-	<obj name="Tutorials" attr="css" value="aio-nav-menu>aio-nav-item:nth-child(7)">
-	<obj name="ReleaseInfo" attr="css" value="aio-nav-menu>aio-nav-item:nth-child(8)">
-	<obj name="Reference" attr="css" value="aio-nav-menu>aio-nav-item:nth-child(9)">
+		<obj name="Get_Started" attr="css" value="div>a:nth-child(1)>section"/>
+		<obj name="Search_bar" attr="css" value="aio-search-box>input"/>
+		<obj name="Heading" attr="css" value="div>h1"/>
+		<obj name="Links" attr="css" value="div.content > p:nth-child(6)"/>
+		<obj name="Features_opt" attr="css" value="ul>li:nth-child(1)>a>span"/>
+		<obj name="Docs_opt" attr="css" value="ul>li:nth-child(2)>a>span"/>
+		<obj name="Resources_opt" attr="css" value="ul>li:nth-child(3)>a>span"/>
+		<obj name="Events_opt" attr="css" value="ul>li:nth-child(4)>a>span"/>
+		<obj name="Blog_opt" attr="css" value="ul>li:nth-child(5)>a>span"/>
+		<obj name="Learn_Explore" attr="css" value="div>a:nth-child(2)>section"/>
+		<obj name="Take_Look" attr="css" value="div>a:nth-child(3)>section"/>
+		<obj name="Hellow_World" attr="css" value="div>a:nth-child(4)>section"/>
+		<obj name="Introduction" attr="css" value="aio-nav-menu>aio-nav-item:nth-child(1)"/>
+		<obj name="Getting_started" attr="css" value="aio-nav-menu>aio-nav-item:nth-child(2)"/>
+		<obj name="Understanding_angular" attr="css" value="aio-nav-menu>aio-nav-item:nth-child(3)"/>
+		<obj name="Developer_Guides" attr="css" value="aio-nav-menu>aio-nav-item:nth-child(4)"/>
+		<obj name="Best_Practices" attr="css" value="aio-nav-menu>aio-nav-item:nth-child(5)"/>
+		<obj name="Angular_Tools" attr="css" value="aio-nav-menu>aio-nav-item:nth-child(6)"/>
+		<obj name="Tutorials" attr="css" value="aio-nav-menu>aio-nav-item:nth-child(7)"/>
+		<obj name="Release_Info" attr="css" value="aio-nav-menu>aio-nav-item:nth-child(8)"/>
+		<obj name="Reference" attr="css" value="aio-nav-menu>aio-nav-item:nth-child(9)"/>
+	</page>
+	<page name="Started">
+		<obj name="Features_opt" attr="css" value="ul>li:nth-child(1)>a>span"/>
+		<obj name="Docs_opt" attr="css" value="ul>li:nth-child(2)>a>span"/>
+		<obj name="Resources_opt" attr="css" value="ul>li:nth-child(3)>a>span"/>
+		<obj name="Events_opt" attr="css" value="ul>li:nth-child(4)>a>span"/>
+		<obj name="Blog_opt" attr="css" value="ul>li:nth-child(5)>a>span"/>
 	</page>
 	<page name="Resources">
-	<obj name="Developmentopt" attr="css" value="aio-resource-list>div>div:nth-child(1)>a:nth-child(1)">
-	<obj name="Educationopt" attr="css" value="aio-resource-list>div>div:nth-child(1)>a:nth-child(2)">
-	<obj name="Communityopt" attr="css" value="aio-resource-list>div>div:nth-child(1)>a:nth-child(3)">
+		<obj name="Development_opt" attr="css" value="aio-resource-list>div>div:nth-child(1)>a:nth-child(1)"/>
+		<obj name="Education_opt" attr="css" value="aio-resource-list>div>div:nth-child(1)>a:nth-child(2)"/>
+		<obj name="Community_opt" attr="css" value="aio-resource-list>div>div:nth-child(1)>a:nth-child(3)"/>
+		<obj name="Features_opt" attr="css" value="ul>li:nth-child(1)>a>span"/>
+		<obj name="Docs_opt" attr="css" value="ul>li:nth-child(2)>a>span"/>
+		<obj name="Resources_opt" attr="css" value="ul>li:nth-child(3)>a>span"/>
+		<obj name="Events_opt" attr="css" value="ul>li:nth-child(4)>a>span"/>
+		<obj name="Blog_opt" attr="css" value="ul>li:nth-child(5)>a>span"/>
 	</page>
-	<page name="">
-
 </root>
+
 
 
 
