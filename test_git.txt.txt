@@ -1,5 +1,47 @@
-Test Repository creation. 
-create develop branch.
-According to tesing criteria, A bug is a Bug no matter how hard it can be managed to be staged.
-So work precisely and report the following bugs as per the requirement.
-Report should be made as a bug.
+@AngularScript
+Feature:angular page navigation
+
+    @AngularSearch
+    Scenario: SearchBar
+        Given I go to URL "https://www.angular.io"
+        And I wait for 5000 ms
+        And I click "Angular_Home_page"."Get_Started"
+        Then I click "Doc"."Search_bar"
+        And I wait for 3000 ms
+        And I type "Angular" in "Doc"."Search_bar"
+        And I wait for 3000 ms
+
+    @AngularNavigate
+    Scenario: Navigation
+        Given I go to URL "https://www.angular.io"
+        And I wait for 5000 ms
+        And I click "Angular_Home_page"."Get_Started"
+        Then I click "Doc"."Features_opt"
+        Then I click "Features_opt"."Get_Started"
+        And I wait for 3000 ms
+        Then I click "Started"."Docs_opt"
+        And I wait for 3000 ms
+        Then "Doc"."Heading" text should be "Introduction to the Angular Docs"
+        Then I click "Doc"."Events_opt"
+        And I wait for 3000 ms
+        And "Events"."Online" should be present
+        And I wait for 3000 ms
+        Then "Events"."check" text should be "May 25-26 (conference), May 27 (workshops), 2020"
+
+    @AngularNavigate
+    Scenario: Get_Word
+        Given I go to URL "https://www.angular.io"
+        And I wait for 5000 ms
+        And I click "Angular_Home_page"."Get_Started"
+        Then I click "Doc"."Features_opt"
+        Then "Features_opt"."Paragraph" should not contain "Zorro"
+        Then "Features_opt"."Paragraph2" text should contain "Component Router,"
+        Then "Features_opt"."Heading_Platform" should be present
+        And I click "Features_opt"."Resources_opt"
+        And I click "Resources"."Education_opt"
+
+    @AngularTexts
+    Scenario: Verify
+        Given I go to URL "https://www.angular.io"
+        And I wait for 5000 ms
+        And I click "".""

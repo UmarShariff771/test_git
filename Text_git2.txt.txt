@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <root>
 	<page name="Angular_Home_page">
 		<obj name="Home_options" attr="css" value="mat-toolbar-row:nth-child(2)>button>span>mat-icon"/>
@@ -64,12 +65,8 @@
 		<obj name="Events_opt" attr="css" value="ul>li:nth-child(4)>a>span"/>
 		<obj name="Blog_opt" attr="css" value="ul>li:nth-child(5)>a>span"/>
 	</page>
-	<page name="Events'>
+	<page name="Events">
 	<obj name="Online" attr="css" value="tr:nth-child(2)>td:nth-child(2)"/>
 	<obj name="check" attr="css" value="tr:nth-child(5)>td:nth-child(3)"/>
 	</page>
 </root>
-
-
-
-
