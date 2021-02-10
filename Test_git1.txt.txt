@@ -1,15 +1,36 @@
-The Following text should add below the text which is being added later typed now.
-according to testing levels of testing include
-1.Functionality Testing
-2.Integration Testing
-3.System Testing
-4.End-to-End Testing
-5.Acceptance Testing
+@CRM_Account_Search
+Feature: Create and search contact
 
-As per the testing life cycle
-
-Requirement analysis
-Test plan
-Test case
-Test Data
-Acceptance Criteria
+@CRM_Search
+  Scenario: Login and Search contact
+    Given I go to URL "https://qa.inksoft.com/ies/admin/crm"
+    Then I click "admin_login"."email_address"
+    And I type "superkings@inksoft.com" in "admin_login"."email_address"
+    And I wait for 3000 ms
+    Then I click "admin_login"."password"
+    And I type "Welcome123" in "admin_login"."password"
+    And I wait for 3000 ms
+    And I click "admin_login"."login_button"
+    And I wait for 10000 ms
+    Then I click "crm_top_navigation"."add_contact_button"
+    And I wait for 5000 ms
+    And I click "contact_list_page"."input_first_name"
+    Then I type "Ezikiel" in "contact_list_page"."input_first_name"
+    And I press ESC Key
+    And I wait for 2000 ms
+    Then I type "Jackson" in "contact_list_page"."input_last_name"
+    And I wait for 2000 ms
+    And I type "98402673497" in "contact_list_page"."input_mobile_phone"
+    And I wait for 2000 ms
+    And I type "testing456@gmail.com" in "contact_list_page"."input_email"
+    And I wait for 2000 ms
+    And I click "modal_dialog"."modal_dialog_done_btn"
+    And I wait for 10000 ms
+    And I click "crm_list_page"."search_box"
+    And I type "Ezikiel Jackson" in "crm_list_page"."search_box"
+    And I press Enter Key
+    And I wait for 3000 ms
+    And I click "crm_list_page"."select_first_displayed_contact_item"
+    And I wait for 3000 ms
+    And "import_contacts"."contacts_name" text should be "Ezikiel Jackson"
+    And I wait for 3000 ms
