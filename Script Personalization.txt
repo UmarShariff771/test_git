@@ -1,0 +1,51 @@
+@PersonalisationTest
+Feature: Personalisation
+
+Scenario: Create order
+Given I go to URL "https://qa.inksoft.com/automation2/shop/account/login"
+And I wait for 3000 ms
+When I click "login_page"."email_address"
+And I type "superkings@inksoft.com" in "login_page"."email_address"
+And I wait for 3000 ms
+When I click "login_page"."password"
+And I type "Welcome123" in "login_page"."password"
+And I wait for 3000 ms
+And I click "login_page"."login_button"
+And I wait for 10000 ms
+Then I Select the product
+And I wait for 5000 ms
+And I wait for 5000 ms
+Then I click "viewCart_modal"."viewCart"
+And I wait for 5000 ms
+Then I proceed to checkout
+And I wait for 5000 ms
+Then I type "Happy Birthday" in "checkout"."gift_msg_input"
+And I wait for 5000 ms
+Then I click "checkout"."order_detail_continue_btn"
+And I wait for 5000 ms
+And I select the shipping method
+Then I wait for 5000 ms
+Then I click "checkout"."delivery_continue_button"
+And I wait for 5000 ms
+When I wait and click "checkout"."creditCard"
+And I wait for 5000 ms
+And I fill the card details
+And I wait for 5000 ms
+And I click "checkout"."payment_continue_btn"
+And I wait for 5000 ms
+And I use this Address
+And I wait for 5000 ms
+Then I click "checkout"."placeOrder"
+And I wait for 20000 ms
+And I get the generated order number
+And I wait for 3000 ms
+Then I navigate to order manager screen
+And I wait for 15000 ms
+And I login order manager
+And I wait for 10000 ms
+Then I search for the Order I placed in Order Manager
+And I wait for 7000 ms
+And I click first option
+And I wait for 8000 ms
+Then I validate the given details
+Then I wait for 10000 ms
