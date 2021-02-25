@@ -1,0 +1,143 @@
+  Then(/^I hover over the product option$/, async function() {
+    const mousehover = await element(by.css('header-links>div>a:nth-child(3)'));
+    browser.actions().mouseMove(mousehover).perform();
+    await browser.sleep(3000);
+  });
+
+  Then(/^I select all products option$/, async function() {
+    const allproducts = await element(by.css('div>div>button:nth-child(1)'));
+    browser.actions().click(allproducts).perform();
+    await browser.sleep(3000);
+  });
+
+  Then(/^I proceed to add to cart$/, async function() {
+    const size = await element(by.css('div:nth-child(2)>div>mat-form-field>div>div:nth-child(1)>div>mat-select'));
+    const medium = await element(by.css('mat-option:nth-child(2)'));
+    const addtocart = await element(by.css('li>div>button'));
+    browser.actions().click(size).perform();
+    browser.actions().click(medium).perform();
+    browser.actions().click(addtocart).perform();
+  });
+
+  Then(/^I select the shipping method$/, async function() {
+    const pickup = await element(by.css('form>div>div:nth-child(1)>div'));
+    browser.actions().click(pickup).perform();
+    browser.sleep(3000);
+  });
+
+  Then(/^I proceed to checkout$/, async function() {
+    const proceed = await element(by.css('div:nth-child(3)>div>div:nth-child(2)>div>button'));
+    browser.actions().click(proceed).perform();
+    browser.sleep(3000);
+  });
+
+  Then(/^I fill the card details$/, async function() {
+    const Fname = await element(by.css('div:nth-child(1)>mat-form-field>div>div:nth-child(1)>div>input'));
+    const Lname = await element(by.css('div:nth-child(2)>mat-form-field>div>div:nth-child(1)>div>input'));
+    const Phone = await element(by.css('div:nth-child(3)>mat-form-field>div>div:nth-child(1)>div>input'));
+    const Company = await element(by.css('div:nth-child(4)>mat-form-field>div>div:nth-child(1)>div>input'));
+    const Address = await element(by.css('div:nth-child(5)>mat-form-field>div>div:nth-child(1)>div>input'));
+    const Apart = await element(by.css('div:nth-child(6)>mat-form-field>div>div:nth-child(1)>div>input'));
+    const country = await element(by.css('div:nth-child(7)>mat-form-field>div>div:nth-child(1)>div>mat-select>div>div:nth-child(1)'));
+    const city = await element(by.css('div:nth-child(8)>mat-form-field>div>div:nth-child(1)>div>input'));
+    const state = await element(by.css('div:nth-child(9)>mat-form-field>div>div:nth-child(1)>div>mat-select>div>div:nth-child(1)'));
+    const zip = await element(by.css('div:nth-child(10)>mat-form-field>div>div:nth-child(1)>div>input'));
+    const US = await element(by.css('mat-option:nth-child(1)>span'));
+    const cali = await element(by.css('mat-option:nth-child(5)'));
+
+    browser.driver.switchTo().frame(0);
+    await element.all(by.className('Input')).get(0).sendKeys('4111111111111111');
+    await browser.sleep(2000);
+    await element.all(by.className('Input')).get(1).sendKeys('06');
+    browser.sleep(2000);
+    await element.all(by.className('Input')).get(1).sendKeys('30');
+    browser.sleep(2000);
+    await element.all(by.className('Input')).get(2).sendKeys('123');
+    browser.driver.switchTo().defaultContent();
+    browser.sleep(3000);
+    browser.actions().click(Fname).perform();
+    await Fname.sendKeys('George');
+    browser.sleep(3000);
+    browser.actions().click(Lname).perform();
+    await Lname.sendKeys('Bush');
+    browser.sleep(3000);
+    browser.actions().click(Phone).perform();
+    await Phone.sendKeys('9876544242');
+    browser.sleep(3000);
+    browser.actions().click(Company).perform();
+    await Company.sendKeys('Accenture');
+    browser.sleep(3000);
+    browser.actions().click(Address).perform();
+    await Address.sendKeys('8F 5th floor');
+    browser.sleep(3000);
+    browser.actions().click(Apart).perform();
+    await Apart.sendKeys('Fine appartments Old Avenue');
+    browser.sleep(3000);
+    browser.actions().click(country).perform();
+    browser.actions().click(US).perform();
+    browser.sleep(3000);
+    browser.actions().click(city).perform();
+    await city.sendKeys('West Blueberry');
+    browser.actions().click(state).perform();
+    browser.actions().click(cali).perform();
+    browser.sleep(3000);
+    browser.actions().click(zip).perform();
+    await zip.sendKeys('90210');
+  });
+
+  Then(/^I use this Address$/, async function() {
+    const useaddress = await element(by.css('button:nth-child(2)>span:nth-child(1)'));
+    browser.actions().click(useaddress).perform();
+  });
+
+  Then(/^I login order manager$/, async function() {
+    const username = await element(by.id('username'));
+    const password = await element(by.id('password'));
+    const login = await element(by.id('login-submit'));
+    await username.sendKeys('superkings@inksoft.com');
+    browser.sleep(3000);
+    await password.sendKeys('Welcome123');
+    browser.sleep(3000);
+    browser.actions().click(login).perform();
+  });
+
+  Then(/^I click first option$/, async function() {
+    const Fopt = await element(by.css('div>mat-table:nth-child(2)>mat-row>mat-cell:nth-child(2)'));
+    browser.actions().click(Fopt).perform();
+  });
+
+  Then(/^I Select the product$/, async function() {
+    const img = await element(by.css('product-art-image>div>div'));
+    const size = await element(by.css('div:nth-child(2)>div>mat-form-field>div>div:nth-child(1)>div>mat-select>div>div:nth-child(1)'));
+    const medium = await element(by.css('div>mat-option:nth-child(3)>span'));
+    const Coach = await element(by.css('div:nth-child(1)>product-personalization>div>mat-form-field>div>div:nth-child(1)>div>input'));
+    const Name = await element(by.css('div:nth-child(2)>product-personalization>div>mat-form-field>div>div:nth-child(1)>div>input'));
+    const year = await element(by.css('div:nth-child(3)>product-personalization>div>mat-form-field>div>div:nth-child(1)>div>input'))
+    const addtocart = await element(by.css('li>div>button'));
+    browser.actions().click(img).perform();
+    browser.sleep(5000);
+    browser.actions().click(size).perform();
+    browser.actions().click(medium).perform();
+    browser.sleep(5000);
+    await Coach.sendKeys('Jerry Joel');
+    browser.sleep(3000);
+    await Name.sendKeys('Calib');
+    browser.sleep(3000);
+    await year.sendKeys('2010');
+    browser.sleep(3000);
+    browser.actions().click(addtocart).perform();
+  });
+
+  Then(/^I validate the given details$/, async function() {
+    const coach = await element(by.css('div:nth-child(3)>div>div:nth-child(3)>table>tbody>tr:nth-child(2)>td:nth-child(2)')).getText();
+    const name = await element(by.css('div:nth-child(3)>div>div:nth-child(3)>table>tbody>tr:nth-child(3)>td:nth-child(2)')).getText();
+    const year = await element(by.css('div:nth-child(3)>div>div:nth-child(3)>table>tbody>tr:nth-child(4)>td:nth-child(2)')).getText();
+    browser.sleep(2000);
+    await expect(coach).to.equal('Jerry Joel');
+    browser.sleep(2000);
+    await expect(name).to.equal('Calib');
+    browser.sleep(2000);
+    await expect(year).to.equal('2010');
+    browser.sleep(2000);
+  });
+});
