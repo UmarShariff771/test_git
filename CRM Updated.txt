@@ -1,0 +1,14 @@
+Scenario: Adding Notes to a Contact and validating timeLine
+When I click notes card - 263 line
+Then(/^I click notes card$/, async function () {
+    const notescard = await element(by.css('notes-card>div>div:nth-child(1)>div:nth-child(2)'));
+    await notescard.click();
+    browser.sleep(2000);
+    await notescard.click();
+  })
+
+Then I verify the added text in Notes text area - 270 line
+export const notesTextArea = element(by.css('notes-card>div>div:nth-child(1)>div:nth-child(2)')); -  line 21 crm.ts page
+
+Scenario: Create Company, Associate Company with a Contact and validating timeline
+Then I scroll down to bottom of the page - 316 line add

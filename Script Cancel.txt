@@ -1,0 +1,69 @@
+@OmCancelorder
+Scenario Outline: Get old order numbers and cancel it bulk
+Given I'm on the Order Manager screen
+And I wait for 5000 ms
+Then I get the old order number
+And I wait for 5000 ms
+Then I go to the order page and cancel it
+And I wait for 10000 ms
+
+
+  Then(/^I get the old order number/, async function() {
+    const ordersort = await element(by.css('mat-header-cell:nth-child(2)>span'));
+    await ordersort.click();
+    browser.sleep(5000);
+    ordernumbers = await element.all(by.css('mat-cell>a')).text;
+  });
+
+  Then(/^I go to the order page and cancel it/, async function() {
+    for (let i = 0; i <= 5; i++) {
+      browser.navigate().to('https://rc.inksoft.com/ies/admin/ordermanager/orders/' + ordernumbers.map(item => item.slice(1))[i]);
+      const options = await element(by.css('div:nth-child(2)>mat-icon'));
+      await options.click();
+      browser.sleep(5000);
+      const cancel = await element(by.css('div>div>div>div>div>button:nth-child(10)'));
+      browser.sleep(5000);
+      await cancel.click();
+      const drop = await element(by.css('mat-select>div>div:nth-child(1)>span'));
+      await drop.click();
+      browser.sleep(5000);
+      const reason = await element(by.css('mat-option:nth-child(2)>span'));
+      await reason.click();
+      browser.sleep(5000);
+      const submit = await element(by.css('mat-dialog-actions>div>div>button>span:nth-child(1)'));
+      await submit.click();
+      browser.sleep(5000);
+    }
+  });
+
+ Then(/^I get the old order number/, async function() {
+    const ordersort = await element(by.css('mat-header-cell:nth-child(2)>span'));
+    await ordersort.click();
+    browser.sleep(5000);
+    ordernumbers = await element.all(by.css('mat-cell>a')).text;
+    ordervalues = ordernumbers.map(async function(item) {
+      item => item.slice(1);
+    });
+  });
+
+  Then(/^I go to the order page and cancel it/, async function() {
+    for (let i = 0; i <= 5; i++) {
+      browser.navigate().to('https://qa.inksoft.com/ies/admin/ordermanager/orders/' + [i]);
+      const options = await element(by.css('div:nth-child(2)>mat-icon'));
+      await options.click();
+      browser.sleep(5000);
+      const cancel = await element(by.css('div>div>div>div>div>button:nth-child(10)'));
+      browser.sleep(5000);
+      await cancel.click();
+      const drop = await element(by.css('mat-select>div>div:nth-child(1)>span'));
+      await drop.click();
+      browser.sleep(5000);
+      const reason = await element(by.css('mat-option:nth-child(2)>span'));
+      await reason.click();
+      browser.sleep(5000);
+      const submit = await element(by.css('mat-dialog-actions>div>div>button>span:nth-child(1)'));
+      await submit.click();
+      browser.sleep(5000);
+    }
+  });
+
